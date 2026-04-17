@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Space Colony</string>
+
+    <!-- Screen Titles -->
+    <string name="title_home">Colony Overview</string>
+    <string name="title_quarters">Quarters</string>
+    <string name="title_simulator">Simulator</string>
+    <string name="title_mission_control">Mission Control</string>
+    <string name="title_medbay">Medbay</string>
+    <string name="title_statistics">Statistics</string>
+    <string name="title_recruit">Recruit Crew Member</string>
+
+    <!-- Bottom Nav Labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_quarters">Quarters</string>
+    <string name="nav_simulator">Simulator</string>
+    <string name="nav_mission">Mission</string>
+    <string name="nav_stats">Stats</string>
+
+    <!-- Home Fragment -->
+    <string name="label_quarters">Quarters</string>
+    <string name="label_simulator">Simulator</string>
+    <string name="label_mission_control">Mission Control</string>
+    <string name="label_medbay">Medbay</string>
+    <string name="label_total_missions">Total Missions:</string>
+    <string name="btn_go_quarters">Go to Quarters</string>
+    <string name="btn_go_simulator">Go to Simulator</string>
+    <string name="btn_go_mission_control">Go to Mission Control</string>
+    <string name="btn_go_medbay">Go to Medbay</string>
+    <string name="btn_recruit">Recruit New Crew Member</string>
+
+    <!-- Recruit Fragment -->
+    <string name="hint_crew_name">Crew Member Name</string>
+    <string name="label_specialization">Specialization</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_recruit_confirm">Recruit</string>
+
+    <!-- Quarters Fragment -->
+    <string name="empty_quarters">No crew in Quarters</string>
+    <string name="btn_move_simulator">Move to Simulator</string>
+    <string name="btn_move_mission_control">Move to Mission Control</string>
+
+    <!-- Simulator Fragment -->
+    <string name="empty_simulator">No crew in Simulator</string>
+    <string name="btn_train">Train</string>
+    <string name="btn_return_quarters">Return to Quarters</string>
+
+    <!-- Mission Control Fragment -->
+    <string name="no_crew_msg">No crew assigned to Mission Control</string>
+    <string name="btn_launch">Launch Mission</string>
+    <string name="btn_attack">Attack</string>
+    <string name="btn_defend">Defend</string>
+    <string name="btn_special">Special</string>
+    <string name="btn_return_crew">Return Crew</string>
+    <string name="label_threat">Threat</string>
+    <string name="label_current_actor">Current Actor</string>
+    <string name="label_energy">Energy:</string>
+    <string name="label_mission_log">Mission Log</string>
+
+    <!-- Medbay Fragment -->
+    <string name="medbay_info">Defeated crew recover here</string>
+    <string name="empty_medbay">Medbay is empty</string>
+
+    <!-- Statistics Fragment -->
+    <string name="label_colony_summary">Colony Summary</string>
+
+    <!-- Item Crew Member -->
+    <string name="label_energy_short">Energy:</string>
+    <string name="content_desc_crew_image">Crew specialization icon</string>
+    <string name="content_desc_color_strip">Specialization color</string>
+
+    <!-- Stats Row -->
+    <string name="stats_header_name">Name</string>
+    <string name="stats_header_spec">Spec</string>
+    <string name="stats_header_missions">Missions</string>
+    <string name="stats_header_victories">Victories</string>
+    <string name="stats_header_training">Training</string>
+
+    <!-- Specializations -->
+    <string name="spec_pilot">Pilot</string>
+    <string name="spec_engineer">Engineer</string>
+    <string name="spec_medic">Medic</string>
+    <string name="spec_scientist">Scientist</string>
+    <string name="spec_soldier">Soldier</string>
+</resources>

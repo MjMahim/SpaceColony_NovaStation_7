@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    app:cardBackgroundColor="@color/colorCard"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="2dp">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="1"
+        android:padding="10dp">
+
+        <!-- Name column -->
+        <TextView
+            android:id="@+id/tv_stats_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="2"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="Cmdr. Reeves" />
+
+        <!-- Spec column -->
+        <TextView
+            android:id="@+id/tv_stats_spec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1.5"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="Pilot" />
+
+        <!-- Missions column -->
+        <TextView
+            android:id="@+id/tv_stats_missions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:gravity="center"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="12sp"
+            tools:text="7" />
+
+        <!-- Victories column -->
+        <TextView
+            android:id="@+id/tv_stats_victories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:gravity="center"
+            android:textColor="@color/colorEnergyGreen"
+            android:textSize="12sp"
+            tools:text="5" />
+
+        <!-- Training column -->
+        <TextView
+            android:id="@+id/tv_stats_training"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:gravity="center"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="12sp"
+            tools:text="12" />
+
+    </GridLayout>
+
+</com.google.android.material.card.MaterialCardView>

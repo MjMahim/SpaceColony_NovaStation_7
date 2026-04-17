@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardBackgroundColor="#1E2A3A"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:minHeight="72dp">
+
+        <!-- Specialization Color Strip -->
+        <View
+            android:id="@+id/view_color_strip"
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:contentDescription="@string/content_desc_color_strip" />
+
+        <!-- Spec Icon -->
+        <ImageView
+            android:id="@+id/iv_spec_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_crew_default"
+            android:contentDescription="@string/content_desc_crew_image"
+            android:scaleType="fitCenter" />
+
+        <!-- Crew Info (name, spec, stats, energy) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingEnd="4dp">
+
+            <!-- Crew Name -->
+            <TextView
+                android:id="@+id/tv_crew_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Cmdr. Reeves" />
+
+            <!-- Specialization -->
+            <TextView
+                android:id="@+id/tv_crew_spec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="14sp"
+                tools:text="Pilot" />
+
+            <!-- Stats -->
+            <TextView
+                android:id="@+id/tv_crew_stats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="#78909C"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                tools:text="skill:5  res:3  exp:120" />
+
+            <!-- Energy Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_energy_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_energy_short"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textSize="11sp"
+                    android:layout_marginEnd="6dp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_energy"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="6dp"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:progress="80"
+                    android:progressTint="@color/colorEnergyGreen"
+                    android:progressBackgroundTint="@color/colorDivider" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Checkbox (right side) -->
+        <CheckBox
+            android:id="@+id/cb_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text=""
+            android:buttonTint="@color/colorAccent"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,41 @@
+SPACE COLONY - Android Project
+================================
+Student: Md Mahim
+Course: Object-Oriented Programming 2026
+Deadline: April 20, 2026, 23:59 Finnish time
+
+SETUP INSTRUCTIONS:
+1. Open Android Studio
+2. File → Open → Select this SpaceColony_project folder
+3. Wait for Gradle sync to complete
+4. The app will sync and download dependencies automatically
+5. Run on emulator (API 26+) or physical device
+
+LAUNCHER ICON:
+- Android Studio will use the default ic_launcher
+- To add custom icon: right-click res → New → Image Asset
+
+GITHUB:
+- Create a PUBLIC GitHub repository
+- Push all files in this folder
+- Include the video link and documentation in the README
+
+BONUS FEATURES IMPLEMENTED:
+✅ RecyclerView (+1)
+✅ Crew Images (+1) 
+✅ Mission Visualization (+2)
+✅ Tactical Combat - Attack/Defend/Special (+2)
+✅ Statistics (+1)
+✅ No Death / Medbay (+1)
+✅ Randomness in Missions (+1)
+✅ Specialization Bonuses (+2)
+✅ Larger Squads 2-3 members (+2)
+✅ Fragments + NavController (+2)
+✅ Data Storage & Loading JSON (+2)
+✅ Statistics Visualization AnyChart (+2)
+
+POTENTIAL TOTAL: 13 (mandatory) + 19 (bonus) = 32 points
+
+AI DISCLAIMER (include in documentation):
+AI was used to assist with code generation and debugging in this project.
+The logic, architecture, and design decisions were planned by the student.

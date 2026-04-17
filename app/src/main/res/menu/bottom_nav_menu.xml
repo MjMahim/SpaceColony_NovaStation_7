@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_nav_home"
+        android:title="@string/nav_home" />
+
+    <item
+        android:id="@+id/quartersFragment"
+        android:icon="@drawable/ic_nav_quarters"
+        android:title="@string/nav_quarters" />
+
+    <item
+        android:id="@+id/simulatorFragment"
+        android:icon="@drawable/ic_nav_simulator"
+        android:title="@string/nav_simulator" />
+
+    <item
+        android:id="@+id/missionControlFragment"
+        android:icon="@drawable/ic_nav_mission"
+        android:title="@string/nav_mission" />
+
+    <item
+        android:id="@+id/statisticsFragment"
+        android:icon="@drawable/ic_nav_stats"
+        android:title="@string/nav_stats" />
+
+</menu>
