@@ -11,6 +11,9 @@ import com.spacecolony.model.CrewMember;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.ForegroundColorSpan;
 
 /**
  * Adapter for the crew member list used in Quarters, Simulator,
@@ -86,7 +89,17 @@ public class CrewMemberAdapter extends RecyclerView.Adapter<CrewMemberAdapter.Vi
         void bind(final CrewMember person) {
             // Fill in the text fields
             // Show rank next to the name so the player can see progression at a glance
-            String nameWithRank = person.getName() + "  [" + person.getRank() + "]";
+            String name = person.getName();
+            String rank = person.getRank();
+
+            SpannableString nameWithRank = new SpannableString(name + "  [" + rank + "]");
+            int rankStart = name.length() + 2;
+            int rankEnd   = nameWithRank.length();
+            nameWithRank.setSpan(
+                    new ForegroundColorSpan(rankColorFor(rank)),
+                    rankStart, rankEnd,
+                    Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
+            );
             b.tvCrewName.setText(nameWithRank);
             b.tvCrewSpec.setText(person.getSpecialization());
             // getEffectiveSkill() = baseSkill + xp, so this reflects training gains
@@ -154,6 +167,14 @@ public class CrewMemberAdapter extends RecyclerView.Adapter<CrewMemberAdapter.Vi
             case "Scientist": return R.drawable.ic_scientist;
             case "Soldier":   return R.drawable.ic_soldier;
             default:          return R.drawable.ic_pilot;
+        }
+    }
+    private int rankColorFor(String rank) {
+        switch (rank) {
+            case "Specialist": return Color.parseColor("#4FC3F7");  // light blue
+            case "Veteran":    return Color.parseColor("#FF9800");  // orange
+            case "Elite":      return Color.parseColor("#FFD700");  // gold
+            default:           return Color.parseColor("#78909C");  // grey (Cadet)
         }
     }
 }
